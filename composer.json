@@ -1,0 +1,26 @@
+    {
+        "name": "seolabs.olx.com/packager",
+        "description": "Create a composer repository from a list of repositories",
+        "type": "library",
+        "license": "GPL-3.0",
+        "version": "0.1.1",
+        "keywords": [ "composer" ],
+
+        "repositories": {
+            "packagist" : { "packagist": false },
+            "seolabs" : { "type": "composer", "url": "http://3d6c958912c1f4bb9c4f-5e0cb9d7fe440a82750c84b85112004c.r28.cf1.rackcdn.com/repo/" }
+        },
+
+        "require": {
+            "php": ">=5.3.0",
+            "symfony/finder": "2.1.*@stable",
+            "symfony/console": "2.1.*@stable",
+            "rackspace/php-cloudfiles": "1.7.*@stable"
+        },
+
+        "autoload": {
+            "psr-0": {
+                "Packager": "src/"
+            }
+        }
+    }
