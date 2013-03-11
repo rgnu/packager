@@ -1,7 +1,7 @@
     {
         "name": "seolabs.olx.com/packager",
         "description": "Create a composer repository from a list of repositories",
-        "type": "library",
+        "type": "application",
         "license": "GPL-3.0",
         "version": "0.1.1",
         "keywords": [ "composer" ],
