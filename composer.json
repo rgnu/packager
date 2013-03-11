@@ -1,21 +1,22 @@
-    {
-        "name": "seolabs.olx.com/packager",
-        "description": "Create a composer repository from a list of repositories",
-        "type": "application",
-        "license": "GPL-3.0",
-        "version": "0.1.1",
-        "keywords": [ "composer" ],
+{
+    "name": "seolabs.olx.com/packager",
+    "description": "Create a composer repository from a list of repositories",
+    "type": "application",
+    "license": "GPL-3.0",
+    "version": "1.0.0",
+    "keywords": [ "composer" ],
 
-        "require": {
-            "php": ">=5.3.0",
-            "symfony/finder": "2.1.*@stable",
-            "symfony/console": "2.1.*@stable",
-            "rackspace/php-cloudfiles": "1.7.*@stable"
-        },
+    "require": {
+        "php": ">=5.3.0",
+        "ext-spl": "*",
+        "symfony/finder": "2.1.*@stable",
+        "symfony/console": "2.1.*@stable",
+        "rackspace/php-cloudfiles": "1.7.*@stable"
+    },
 
-        "autoload": {
-            "psr-0": {
-                "Packager": "src/"
-            }
+    "autoload": {
+        "psr-0": {
+            "Packager": "src/"
         }
     }
+}

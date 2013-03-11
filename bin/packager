@@ -4,7 +4,6 @@
 require __DIR__.'/../src/bootstrap.php';
 
 use Packager\Console\Application;
-use Symfony\Component\Console\Shell;
 
 $application = new Application();
 $application->run();
