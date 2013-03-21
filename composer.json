@@ -11,7 +11,7 @@
         "ext-spl": "*",
         "symfony/finder": "2.1.*@stable",
         "symfony/console": "2.1.*@stable",
-        "rackspace/php-cloudfiles": "1.7.*@stable"
+        "omissis/php-cloudfiles": "1.7.*@stable"
     },
 
     "autoload": {
