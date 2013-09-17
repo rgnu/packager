@@ -1,5 +1,5 @@
 {
-    "name": "rgnu.com.ar/packager",
+    "name": "rgnu/packager",
     "description": "Create a composer repository from a list of repositories",
     "type": "application",
     "license": "GPL-3.0",
