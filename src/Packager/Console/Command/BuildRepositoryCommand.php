@@ -68,10 +68,8 @@ class BuildRepositoryCommand extends Command
         $repo->getAddPackageSubject()->attach($listener);
 
         foreach($config->repositories as $v) {
-            $output->writeln(sprintf("Process Repository <info>%s</info>", $v->path));
-            if ($v->type == "dir") {
-                $repo->loadFromdir($v->path);
-            }
+            $output->writeln(sprintf("Process Repository <info>%s %s</info>", $v->type, $v->path));
+            $repo->process($v);
         }
 
         $repo->toFile(sprintf("%s/packages.json", $config->output));

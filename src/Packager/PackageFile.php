@@ -15,9 +15,10 @@ class PackageFile extends Package
      *
      * @param type $name 
      */
-    public function __construct($name)
+    public function __construct($name, $data=null)
     {
         $this->name    = $name;
+        $this->data    = $data;
     }
     
     public function getData()

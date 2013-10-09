@@ -61,9 +61,13 @@ class CloudFileCommand extends Command
         $cont = $conn->get_container($dest->host);
         
         $finder = new Finder();
-        $finder->files()
+        $finder
+            ->files()
             ->ignoreVCS(true)
-            ->in($source->path);
+            ->in($source->path)
+            ->name('/(zip|tgz|tar.gz|tar.bz2)$/')
+            ->name('packages.json')
+            ->sortByName();
 
         foreach ($finder as $f) {
             $output->write(sprintf("Upload %s", $f->getRelativePathname()));

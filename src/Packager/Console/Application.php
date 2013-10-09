@@ -23,7 +23,7 @@ class Application extends BaseApplication
      */
     public function __construct()
     {
-        parent::__construct('Packager', '1.0.0');
+        parent::__construct('Packager', '1.0.1');
         $this->setCatchExceptions(true);
     }
 
